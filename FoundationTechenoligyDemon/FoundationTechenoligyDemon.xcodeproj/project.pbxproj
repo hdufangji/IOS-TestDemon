@@ -16,6 +16,8 @@
 		5756E4481A690E5A00741D26 /* check_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E43F1A690E5A00741D26 /* check_checked.png */; };
 		5756E4491A690E5A00741D26 /* check_unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E4401A690E5A00741D26 /* check_unchecked.png */; };
 		5756E44A1A690E5A00741D26 /* contacts.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E4411A690E5A00741D26 /* contacts.png */; };
+		5756E44D1A6914A500741D26 /* VFScrollViewImageViewDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5756E44C1A6914A500741D26 /* VFScrollViewImageViewDemon.m */; };
+		5756E44F1A691BF000741D26 /* ScreenShot1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E44E1A691BF000741D26 /* ScreenShot1.png */; };
 		57E538D21A68F15F007B7282 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D11A68F15F007B7282 /* Foundation.framework */; };
 		57E538D41A68F15F007B7282 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D31A68F15F007B7282 /* CoreGraphics.framework */; };
 		57E538D61A68F15F007B7282 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D51A68F15F007B7282 /* UIKit.framework */; };
@@ -54,6 +56,9 @@
 		5756E43F1A690E5A00741D26 /* check_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_checked.png; sourceTree = "<group>"; };
 		5756E4401A690E5A00741D26 /* check_unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_unchecked.png; sourceTree = "<group>"; };
 		5756E4411A690E5A00741D26 /* contacts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contacts.png; sourceTree = "<group>"; };
+		5756E44B1A6914A500741D26 /* VFScrollViewImageViewDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFScrollViewImageViewDemon.h; sourceTree = "<group>"; };
+		5756E44C1A6914A500741D26 /* VFScrollViewImageViewDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFScrollViewImageViewDemon.m; sourceTree = "<group>"; };
+		5756E44E1A691BF000741D26 /* ScreenShot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenShot1.png; sourceTree = "<group>"; };
 		57E538CE1A68F15F007B7282 /* FoundationTechenoligyDemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundationTechenoligyDemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E538D11A68F15F007B7282 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		57E538D31A68F15F007B7282 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -106,6 +111,7 @@
 		5756E4381A690E3300741D26 /* resource */ = {
 			isa = PBXGroup;
 			children = (
+				5756E44E1A691BF000741D26 /* ScreenShot1.png */,
 				5756E4391A690E5A00741D26 /* about.png */,
 				5756E43A1A690E5A00741D26 /* abouttap.png */,
 				5756E43B1A690E5A00741D26 /* arrow.png */,
@@ -201,6 +207,8 @@
 			children = (
 				57E5390A1A68F8E5007B7282 /* VFButtonDemonViewController.h */,
 				57E5390B1A68F8E5007B7282 /* VFButtonDemonViewController.m */,
+				5756E44B1A6914A500741D26 /* VFScrollViewImageViewDemon.h */,
+				5756E44C1A6914A500741D26 /* VFScrollViewImageViewDemon.m */,
 			);
 			name = UIKitDemon;
 			sourceTree = "<group>";
@@ -287,6 +295,7 @@
 				5756E4481A690E5A00741D26 /* check_checked.png in Resources */,
 				5756E4461A690E5A00741D26 /* bg.png in Resources */,
 				5756E4471A690E5A00741D26 /* calllog.png in Resources */,
+				5756E44F1A691BF000741D26 /* ScreenShot1.png in Resources */,
 				57E538DC1A68F15F007B7282 /* InfoPlist.strings in Resources */,
 				5756E44A1A690E5A00741D26 /* contacts.png in Resources */,
 				57E538E51A68F15F007B7282 /* Main.storyboard in Resources */,
@@ -316,6 +325,7 @@
 				57E539081A68F1E8007B7282 /* VFStringObject.m in Sources */,
 				57E538E81A68F15F007B7282 /* VFViewController.m in Sources */,
 				57E538DE1A68F15F007B7282 /* main.m in Sources */,
+				5756E44D1A6914A500741D26 /* VFScrollViewImageViewDemon.m in Sources */,
 				57E5390C1A68F8E5007B7282 /* VFButtonDemonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
