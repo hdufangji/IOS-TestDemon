@@ -31,11 +31,6 @@
     [super viewDidLoad];
     
     [self initButton];
-    
-    if (bt) {
-//        [bt setBackgroundColor:[UIColor redColor]];
-        [self.view addSubview:bt];
-    }
     // Do any additional setup after loading the view.
 }
 
@@ -46,7 +41,20 @@
     
 //    2. init with default type
     bt = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+//    3. add image background
+    [bt setImage:[UIImage imageNamed:@"calllog.png"] forState:UIControlStateNormal];
+    [bt setTitle:@"hitme" forState:UIControlStateNormal];
     [bt setFrame:CGRectMake(20, 20, 120, 60)];
+    
+    [bt addTarget:self action:@selector(onButtonClicked:) forControlEvents:UIControlEventAllTouchEvents];
+    //        [bt setBackgroundColor:[UIColor redColor]];
+    [self.view addSubview:bt];
+}
+
+- (void) onButtonClicked: (UIButton *)bt
+{
+    NSLog(@"onButtonClicked onButtonClicked onButtonClicked!!!!!!!!!!!!");
 }
 
 - (void)didReceiveMemoryWarning
