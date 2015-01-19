@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32CBE3B11A6D522500E728D1 /* VFUIPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3B01A6D522500E728D1 /* VFUIPickerView.m */; };
 		5756E4421A690E5A00741D26 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E4391A690E5A00741D26 /* about.png */; };
 		5756E4431A690E5A00741D26 /* abouttap.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E43A1A690E5A00741D26 /* abouttap.png */; };
 		5756E4441A690E5A00741D26 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E43B1A690E5A00741D26 /* arrow.png */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32CBE3AF1A6D522500E728D1 /* VFUIPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFUIPickerView.h; sourceTree = "<group>"; };
+		32CBE3B01A6D522500E728D1 /* VFUIPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFUIPickerView.m; sourceTree = "<group>"; };
 		5756E4391A690E5A00741D26 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		5756E43A1A690E5A00741D26 /* abouttap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abouttap.png; sourceTree = "<group>"; };
 		5756E43B1A690E5A00741D26 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 				578AFE531A6CD0800063BE6F /* VFUITableViewDemon.m */,
 				578AFE581A6CE13E0063BE6F /* VFUIDatePicker.h */,
 				578AFE591A6CE13E0063BE6F /* VFUIDatePicker.m */,
+				32CBE3AF1A6D522500E728D1 /* VFUIPickerView.h */,
+				32CBE3B01A6D522500E728D1 /* VFUIPickerView.m */,
 			);
 			name = AdvancedUIKitDemon;
 			sourceTree = "<group>";
@@ -356,6 +361,7 @@
 				578AFE541A6CD0800063BE6F /* VFUITableViewDemon.m in Sources */,
 				578AFE5A1A6CE13E0063BE6F /* VFUIDatePicker.m in Sources */,
 				5756E44D1A6914A500741D26 /* VFScrollViewImageViewDemon.m in Sources */,
+				32CBE3B11A6D522500E728D1 /* VFUIPickerView.m in Sources */,
 				578AFE4D1A6C9C390063BE6F /* VFLabelTextfieldDemon.m in Sources */,
 				57E5390C1A68F8E5007B7282 /* VFButtonDemonViewController.m in Sources */,
 				578AFE501A6CCB4B0063BE6F /* VFAlertViewDemon.m in Sources */,

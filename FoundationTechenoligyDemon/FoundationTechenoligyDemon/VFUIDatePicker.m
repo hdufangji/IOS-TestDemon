@@ -26,7 +26,8 @@
 
 - (void)initDatePicker
 {
-    datePicker = [[UIDatePicker allocWithZone:NSDefaultMallocZone()] initWithFrame:CGRectMake(0, 0, 320, 240)];
+    datePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 0, 320, 240)];
+    [datePicker setTimeZone:[NSTimeZone systemTimeZone]];
     datePicker.datePickerMode = UIDatePickerModeDateAndTime;
     datePicker.minuteInterval = 5;
     
