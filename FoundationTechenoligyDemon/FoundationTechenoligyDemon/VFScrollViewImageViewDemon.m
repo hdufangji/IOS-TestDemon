@@ -26,6 +26,7 @@
     
     [self initImageView];
     
+    [scrollView setContentSize:CGSizeMake(imageView.frame.size.width, imageView.frame.size.height)];
     [scrollView addSubview:imageView];
     
     [self.view addSubview:scrollView];
@@ -35,11 +36,13 @@
 - (void)initScrollView
 {
     scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
-    [scrollView setContentSize:CGSizeMake(scrollView.frame.size.width, scrollView.frame.size.height)];
+    
     scrollView.directionalLockEnabled = YES;
     scrollView.backgroundColor = [UIColor redColor];
     scrollView.showsVerticalScrollIndicator = YES;
     scrollView.indicatorStyle = UIScrollViewIndicatorStyleBlack;
+    scrollView.maximumZoomScale = 2.0;
+    scrollView.minimumZoomScale = 0.5;
     
     scrollView.delegate = self;
 }
@@ -47,6 +50,11 @@
 - (void)initImageView
 {
     imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ScreenShot1.png"]];
+}
+
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return imageView;
 }
 
 @end

@@ -18,6 +18,8 @@
 		5756E44A1A690E5A00741D26 /* contacts.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E4411A690E5A00741D26 /* contacts.png */; };
 		5756E44D1A6914A500741D26 /* VFScrollViewImageViewDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5756E44C1A6914A500741D26 /* VFScrollViewImageViewDemon.m */; };
 		5756E44F1A691BF000741D26 /* ScreenShot1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E44E1A691BF000741D26 /* ScreenShot1.png */; };
+		578AFE4D1A6C9C390063BE6F /* VFLabelTextfieldDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE4C1A6C9C390063BE6F /* VFLabelTextfieldDemon.m */; };
+		578AFE501A6CCB4B0063BE6F /* VFAlertViewDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE4F1A6CCB4B0063BE6F /* VFAlertViewDemon.m */; };
 		57E538D21A68F15F007B7282 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D11A68F15F007B7282 /* Foundation.framework */; };
 		57E538D41A68F15F007B7282 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D31A68F15F007B7282 /* CoreGraphics.framework */; };
 		57E538D61A68F15F007B7282 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D51A68F15F007B7282 /* UIKit.framework */; };
@@ -59,6 +61,10 @@
 		5756E44B1A6914A500741D26 /* VFScrollViewImageViewDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFScrollViewImageViewDemon.h; sourceTree = "<group>"; };
 		5756E44C1A6914A500741D26 /* VFScrollViewImageViewDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFScrollViewImageViewDemon.m; sourceTree = "<group>"; };
 		5756E44E1A691BF000741D26 /* ScreenShot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenShot1.png; sourceTree = "<group>"; };
+		578AFE4B1A6C9C390063BE6F /* VFLabelTextfieldDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFLabelTextfieldDemon.h; sourceTree = "<group>"; };
+		578AFE4C1A6C9C390063BE6F /* VFLabelTextfieldDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFLabelTextfieldDemon.m; sourceTree = "<group>"; };
+		578AFE4E1A6CCB4B0063BE6F /* VFAlertViewDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFAlertViewDemon.h; sourceTree = "<group>"; };
+		578AFE4F1A6CCB4B0063BE6F /* VFAlertViewDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFAlertViewDemon.m; sourceTree = "<group>"; };
 		57E538CE1A68F15F007B7282 /* FoundationTechenoligyDemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundationTechenoligyDemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E538D11A68F15F007B7282 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		57E538D31A68F15F007B7282 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -209,6 +215,10 @@
 				57E5390B1A68F8E5007B7282 /* VFButtonDemonViewController.m */,
 				5756E44B1A6914A500741D26 /* VFScrollViewImageViewDemon.h */,
 				5756E44C1A6914A500741D26 /* VFScrollViewImageViewDemon.m */,
+				578AFE4B1A6C9C390063BE6F /* VFLabelTextfieldDemon.h */,
+				578AFE4C1A6C9C390063BE6F /* VFLabelTextfieldDemon.m */,
+				578AFE4E1A6CCB4B0063BE6F /* VFAlertViewDemon.h */,
+				578AFE4F1A6CCB4B0063BE6F /* VFAlertViewDemon.m */,
 			);
 			name = UIKitDemon;
 			sourceTree = "<group>";
@@ -326,7 +336,9 @@
 				57E538E81A68F15F007B7282 /* VFViewController.m in Sources */,
 				57E538DE1A68F15F007B7282 /* main.m in Sources */,
 				5756E44D1A6914A500741D26 /* VFScrollViewImageViewDemon.m in Sources */,
+				578AFE4D1A6C9C390063BE6F /* VFLabelTextfieldDemon.m in Sources */,
 				57E5390C1A68F8E5007B7282 /* VFButtonDemonViewController.m in Sources */,
+				578AFE501A6CCB4B0063BE6F /* VFAlertViewDemon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
