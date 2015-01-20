@@ -23,6 +23,7 @@
 		578AFE501A6CCB4B0063BE6F /* VFAlertViewDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE4F1A6CCB4B0063BE6F /* VFAlertViewDemon.m */; };
 		578AFE541A6CD0800063BE6F /* VFUITableViewDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE531A6CD0800063BE6F /* VFUITableViewDemon.m */; };
 		578AFE5A1A6CE13E0063BE6F /* VFUIDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE591A6CE13E0063BE6F /* VFUIDatePicker.m */; };
+		578AFE5D1A6DFB040063BE6F /* VFUITabBarControllerDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE5C1A6DFB040063BE6F /* VFUITabBarControllerDemon.m */; };
 		57E538D21A68F15F007B7282 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D11A68F15F007B7282 /* Foundation.framework */; };
 		57E538D41A68F15F007B7282 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D31A68F15F007B7282 /* CoreGraphics.framework */; };
 		57E538D61A68F15F007B7282 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D51A68F15F007B7282 /* UIKit.framework */; };
@@ -74,6 +75,8 @@
 		578AFE531A6CD0800063BE6F /* VFUITableViewDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFUITableViewDemon.m; sourceTree = "<group>"; };
 		578AFE581A6CE13E0063BE6F /* VFUIDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFUIDatePicker.h; sourceTree = "<group>"; };
 		578AFE591A6CE13E0063BE6F /* VFUIDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFUIDatePicker.m; sourceTree = "<group>"; };
+		578AFE5B1A6DFB040063BE6F /* VFUITabBarControllerDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFUITabBarControllerDemon.h; sourceTree = "<group>"; };
+		578AFE5C1A6DFB040063BE6F /* VFUITabBarControllerDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFUITabBarControllerDemon.m; sourceTree = "<group>"; };
 		57E538CE1A68F15F007B7282 /* FoundationTechenoligyDemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundationTechenoligyDemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E538D11A68F15F007B7282 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		57E538D31A68F15F007B7282 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -149,6 +152,8 @@
 				578AFE591A6CE13E0063BE6F /* VFUIDatePicker.m */,
 				32CBE3AF1A6D522500E728D1 /* VFUIPickerView.h */,
 				32CBE3B01A6D522500E728D1 /* VFUIPickerView.m */,
+				578AFE5B1A6DFB040063BE6F /* VFUITabBarControllerDemon.h */,
+				578AFE5C1A6DFB040063BE6F /* VFUITabBarControllerDemon.m */,
 			);
 			name = AdvancedUIKitDemon;
 			sourceTree = "<group>";
@@ -361,6 +366,7 @@
 				578AFE541A6CD0800063BE6F /* VFUITableViewDemon.m in Sources */,
 				578AFE5A1A6CE13E0063BE6F /* VFUIDatePicker.m in Sources */,
 				5756E44D1A6914A500741D26 /* VFScrollViewImageViewDemon.m in Sources */,
+				578AFE5D1A6DFB040063BE6F /* VFUITabBarControllerDemon.m in Sources */,
 				32CBE3B11A6D522500E728D1 /* VFUIPickerView.m in Sources */,
 				578AFE4D1A6C9C390063BE6F /* VFLabelTextfieldDemon.m in Sources */,
 				57E5390C1A68F8E5007B7282 /* VFButtonDemonViewController.m in Sources */,
