@@ -31,6 +31,8 @@
     
     [self initDB];
     
+    [self initTable];
+    
     [self insertData];
 }
 
@@ -43,6 +45,26 @@
         NSLog(@"数据库打开失败！");
     }
     
+    NSLog(@"%@", dbPath);
+    
+}
+
+- (void)initTable
+{
+  const char *sql = "CREATE TABLE IF NOT EXISTS person (id integer PRIMARY KEY AUTOINCREMENT, name text NOT NULL, age integer NOT NULL, gender text NOT NULL) ";
+    char *errCode = NULL;
+    int result = sqlite3_exec(db, sql, NULL, NULL, &errCode);
+    
+    if (result == SQLITE_OK) {
+        NSLog(@"创建成功！");
+    }else{
+        NSLog(@"创建失败！");
+    }
+}
+
+- (void)insertData
+{
+    const char *sql = "";
 }
 
 @end
