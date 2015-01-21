@@ -28,6 +28,10 @@
 		578AFE5D1A6DFB040063BE6F /* VFUITabBarControllerDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE5C1A6DFB040063BE6F /* VFUITabBarControllerDemon.m */; };
 		578AFE611A6F32A50063BE6F /* VFDeviceNotificationDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE601A6F32A50063BE6F /* VFDeviceNotificationDemon.m */; };
 		578AFE641A6F486D0063BE6F /* VFPreferenceDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE631A6F486D0063BE6F /* VFPreferenceDemon.m */; };
+		578AFE671A6F6E070063BE6F /* VFSQLiteDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE661A6F6E070063BE6F /* VFSQLiteDemon.m */; };
+		578AFE691A6F6F540063BE6F /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 578AFE681A6F6F540063BE6F /* libsqlite3.0.dylib */; };
+		578AFE6D1A6F8D5C0063BE6F /* VFPathUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE6C1A6F8D5C0063BE6F /* VFPathUtility.m */; };
+		578AFE6F1A6F98E20063BE6F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 578AFE6E1A6F98E20063BE6F /* libsqlite3.dylib */; };
 		57E538D21A68F15F007B7282 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D11A68F15F007B7282 /* Foundation.framework */; };
 		57E538D41A68F15F007B7282 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D31A68F15F007B7282 /* CoreGraphics.framework */; };
 		57E538D61A68F15F007B7282 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D51A68F15F007B7282 /* UIKit.framework */; };
@@ -88,6 +92,12 @@
 		578AFE601A6F32A50063BE6F /* VFDeviceNotificationDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFDeviceNotificationDemon.m; sourceTree = "<group>"; };
 		578AFE621A6F486D0063BE6F /* VFPreferenceDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFPreferenceDemon.h; sourceTree = "<group>"; };
 		578AFE631A6F486D0063BE6F /* VFPreferenceDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFPreferenceDemon.m; sourceTree = "<group>"; };
+		578AFE651A6F6E070063BE6F /* VFSQLiteDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFSQLiteDemon.h; sourceTree = "<group>"; };
+		578AFE661A6F6E070063BE6F /* VFSQLiteDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFSQLiteDemon.m; sourceTree = "<group>"; };
+		578AFE681A6F6F540063BE6F /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		578AFE6B1A6F8D5C0063BE6F /* VFPathUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFPathUtility.h; sourceTree = "<group>"; };
+		578AFE6C1A6F8D5C0063BE6F /* VFPathUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFPathUtility.m; sourceTree = "<group>"; };
+		578AFE6E1A6F98E20063BE6F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		57E538CE1A68F15F007B7282 /* FoundationTechenoligyDemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundationTechenoligyDemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E538D11A68F15F007B7282 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		57E538D31A68F15F007B7282 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -118,6 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				578AFE6F1A6F98E20063BE6F /* libsqlite3.dylib in Frameworks */,
+				578AFE691A6F6F540063BE6F /* libsqlite3.0.dylib in Frameworks */,
 				57E538D41A68F15F007B7282 /* CoreGraphics.framework in Frameworks */,
 				57E538D61A68F15F007B7282 /* UIKit.framework in Frameworks */,
 				57E538D21A68F15F007B7282 /* Foundation.framework in Frameworks */,
@@ -145,6 +157,8 @@
 				32CBE3B61A6E975300E728D1 /* MyPList.plist */,
 				578AFE621A6F486D0063BE6F /* VFPreferenceDemon.h */,
 				578AFE631A6F486D0063BE6F /* VFPreferenceDemon.m */,
+				578AFE651A6F6E070063BE6F /* VFSQLiteDemon.h */,
+				578AFE661A6F6E070063BE6F /* VFSQLiteDemon.m */,
 			);
 			name = DataStorageDemon;
 			sourceTree = "<group>";
@@ -190,6 +204,15 @@
 			name = NotificationDemon;
 			sourceTree = "<group>";
 		};
+		578AFE6A1A6F8D110063BE6F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				578AFE6B1A6F8D5C0063BE6F /* VFPathUtility.h */,
+				578AFE6C1A6F8D5C0063BE6F /* VFPathUtility.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		57E538C51A68F15F007B7282 = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +235,8 @@
 		57E538D01A68F15F007B7282 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				578AFE6E1A6F98E20063BE6F /* libsqlite3.dylib */,
+				578AFE681A6F6F540063BE6F /* libsqlite3.0.dylib */,
 				57E538D11A68F15F007B7282 /* Foundation.framework */,
 				57E538D31A68F15F007B7282 /* CoreGraphics.framework */,
 				57E538D51A68F15F007B7282 /* UIKit.framework */,
@@ -223,6 +248,7 @@
 		57E538D71A68F15F007B7282 /* FoundationTechenoligyDemon */ = {
 			isa = PBXGroup;
 			children = (
+				578AFE6A1A6F8D110063BE6F /* Utility */,
 				578AFE5E1A6F32700063BE6F /* NotificationDemon */,
 				32CBE3B21A6E96EB00E728D1 /* DataStorageDemon */,
 				578AFE511A6CCFF60063BE6F /* AdvancedUIKitDemon */,
@@ -405,6 +431,8 @@
 				32CBE3B51A6E972200E728D1 /* VFplistDemon.m in Sources */,
 				5756E44D1A6914A500741D26 /* VFScrollViewImageViewDemon.m in Sources */,
 				578AFE5D1A6DFB040063BE6F /* VFUITabBarControllerDemon.m in Sources */,
+				578AFE6D1A6F8D5C0063BE6F /* VFPathUtility.m in Sources */,
+				578AFE671A6F6E070063BE6F /* VFSQLiteDemon.m in Sources */,
 				32CBE3B11A6D522500E728D1 /* VFUIPickerView.m in Sources */,
 				578AFE4D1A6C9C390063BE6F /* VFLabelTextfieldDemon.m in Sources */,
 				57E5390C1A68F8E5007B7282 /* VFButtonDemonViewController.m in Sources */,
