@@ -213,6 +213,13 @@
 			name = Utility;
 			sourceTree = "<group>";
 		};
+		578AFE701A709FB30063BE6F /* Thread&Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Thread&Network";
+			sourceTree = "<group>";
+		};
 		57E538C51A68F15F007B7282 = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +255,7 @@
 		57E538D71A68F15F007B7282 /* FoundationTechenoligyDemon */ = {
 			isa = PBXGroup;
 			children = (
+				578AFE701A709FB30063BE6F /* Thread&Network */,
 				578AFE6A1A6F8D110063BE6F /* Utility */,
 				578AFE5E1A6F32700063BE6F /* NotificationDemon */,
 				32CBE3B21A6E96EB00E728D1 /* DataStorageDemon */,

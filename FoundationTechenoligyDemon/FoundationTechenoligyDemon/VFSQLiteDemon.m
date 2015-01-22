@@ -58,13 +58,21 @@
     if (result == SQLITE_OK) {
         NSLog(@"创建成功！");
     }else{
-        NSLog(@"创建失败！");
+        NSLog(@"创建失败！------- %s", errCode);
     }
 }
 
 - (void)insertData
 {
-    const char *sql = "";
+    char *errMsg = NULL;
+    NSString *sql = [NSString stringWithFormat:@"INSERT INTO person (name, age, gender) VALUES ('%s', %d, '%s');", @"fangji", 28, @"male"];
+    sqlite3_exec(db, sql.UTF8String, NULL, NULL, errMsg);
+
+    if (errMsg) {
+        NSLog(@"插入数据失败, ------------ %s", errMsg);
+    }else{
+        NSLog(@"插入数据成功");
+    }
 }
 
 @end
