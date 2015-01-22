@@ -10,6 +10,7 @@
 		32CBE3B11A6D522500E728D1 /* VFUIPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3B01A6D522500E728D1 /* VFUIPickerView.m */; };
 		32CBE3B51A6E972200E728D1 /* VFplistDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3B41A6E972200E728D1 /* VFplistDemon.m */; };
 		32CBE3B71A6E975300E728D1 /* MyPList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32CBE3B61A6E975300E728D1 /* MyPList.plist */; };
+		32CBE3BA1A71218E00E728D1 /* VFThreadDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3B91A71218E00E728D1 /* VFThreadDemon.m */; };
 		5756E4421A690E5A00741D26 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E4391A690E5A00741D26 /* about.png */; };
 		5756E4431A690E5A00741D26 /* abouttap.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E43A1A690E5A00741D26 /* abouttap.png */; };
 		5756E4441A690E5A00741D26 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E43B1A690E5A00741D26 /* arrow.png */; };
@@ -66,6 +67,8 @@
 		32CBE3B31A6E972200E728D1 /* VFplistDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFplistDemon.h; sourceTree = "<group>"; };
 		32CBE3B41A6E972200E728D1 /* VFplistDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFplistDemon.m; sourceTree = "<group>"; };
 		32CBE3B61A6E975300E728D1 /* MyPList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyPList.plist; sourceTree = "<group>"; };
+		32CBE3B81A71218E00E728D1 /* VFThreadDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFThreadDemon.h; sourceTree = "<group>"; };
+		32CBE3B91A71218E00E728D1 /* VFThreadDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFThreadDemon.m; sourceTree = "<group>"; };
 		5756E4391A690E5A00741D26 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		5756E43A1A690E5A00741D26 /* abouttap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abouttap.png; sourceTree = "<group>"; };
 		5756E43B1A690E5A00741D26 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
@@ -216,6 +219,8 @@
 		578AFE701A709FB30063BE6F /* Thread&Network */ = {
 			isa = PBXGroup;
 			children = (
+				32CBE3B81A71218E00E728D1 /* VFThreadDemon.h */,
+				32CBE3B91A71218E00E728D1 /* VFThreadDemon.m */,
 			);
 			name = "Thread&Network";
 			sourceTree = "<group>";
@@ -433,6 +438,7 @@
 				57E538E81A68F15F007B7282 /* VFViewController.m in Sources */,
 				57E538DE1A68F15F007B7282 /* main.m in Sources */,
 				578AFE641A6F486D0063BE6F /* VFPreferenceDemon.m in Sources */,
+				32CBE3BA1A71218E00E728D1 /* VFThreadDemon.m in Sources */,
 				578AFE611A6F32A50063BE6F /* VFDeviceNotificationDemon.m in Sources */,
 				578AFE541A6CD0800063BE6F /* VFUITableViewDemon.m in Sources */,
 				578AFE5A1A6CE13E0063BE6F /* VFUIDatePicker.m in Sources */,
