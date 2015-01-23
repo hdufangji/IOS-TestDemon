@@ -33,6 +33,8 @@
 		578AFE691A6F6F540063BE6F /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 578AFE681A6F6F540063BE6F /* libsqlite3.0.dylib */; };
 		578AFE6D1A6F8D5C0063BE6F /* VFPathUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE6C1A6F8D5C0063BE6F /* VFPathUtility.m */; };
 		578AFE6F1A6F98E20063BE6F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 578AFE6E1A6F98E20063BE6F /* libsqlite3.dylib */; };
+		578AFE731A7213630063BE6F /* VFOperationDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE721A7213630063BE6F /* VFOperationDemon.m */; };
+		578AFE761A7231370063BE6F /* VFGCDDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE751A7231370063BE6F /* VFGCDDemon.m */; };
 		57E538D21A68F15F007B7282 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D11A68F15F007B7282 /* Foundation.framework */; };
 		57E538D41A68F15F007B7282 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D31A68F15F007B7282 /* CoreGraphics.framework */; };
 		57E538D61A68F15F007B7282 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D51A68F15F007B7282 /* UIKit.framework */; };
@@ -101,6 +103,10 @@
 		578AFE6B1A6F8D5C0063BE6F /* VFPathUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFPathUtility.h; sourceTree = "<group>"; };
 		578AFE6C1A6F8D5C0063BE6F /* VFPathUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFPathUtility.m; sourceTree = "<group>"; };
 		578AFE6E1A6F98E20063BE6F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		578AFE711A7213630063BE6F /* VFOperationDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFOperationDemon.h; sourceTree = "<group>"; };
+		578AFE721A7213630063BE6F /* VFOperationDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFOperationDemon.m; sourceTree = "<group>"; };
+		578AFE741A7231370063BE6F /* VFGCDDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFGCDDemon.h; sourceTree = "<group>"; };
+		578AFE751A7231370063BE6F /* VFGCDDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFGCDDemon.m; sourceTree = "<group>"; };
 		57E538CE1A68F15F007B7282 /* FoundationTechenoligyDemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundationTechenoligyDemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E538D11A68F15F007B7282 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		57E538D31A68F15F007B7282 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -221,6 +227,10 @@
 			children = (
 				32CBE3B81A71218E00E728D1 /* VFThreadDemon.h */,
 				32CBE3B91A71218E00E728D1 /* VFThreadDemon.m */,
+				578AFE711A7213630063BE6F /* VFOperationDemon.h */,
+				578AFE721A7213630063BE6F /* VFOperationDemon.m */,
+				578AFE741A7231370063BE6F /* VFGCDDemon.h */,
+				578AFE751A7231370063BE6F /* VFGCDDemon.m */,
 			);
 			name = "Thread&Network";
 			sourceTree = "<group>";
@@ -437,6 +447,7 @@
 				57E539081A68F1E8007B7282 /* VFStringObject.m in Sources */,
 				57E538E81A68F15F007B7282 /* VFViewController.m in Sources */,
 				57E538DE1A68F15F007B7282 /* main.m in Sources */,
+				578AFE731A7213630063BE6F /* VFOperationDemon.m in Sources */,
 				578AFE641A6F486D0063BE6F /* VFPreferenceDemon.m in Sources */,
 				32CBE3BA1A71218E00E728D1 /* VFThreadDemon.m in Sources */,
 				578AFE611A6F32A50063BE6F /* VFDeviceNotificationDemon.m in Sources */,
@@ -444,6 +455,7 @@
 				578AFE5A1A6CE13E0063BE6F /* VFUIDatePicker.m in Sources */,
 				32CBE3B51A6E972200E728D1 /* VFplistDemon.m in Sources */,
 				5756E44D1A6914A500741D26 /* VFScrollViewImageViewDemon.m in Sources */,
+				578AFE761A7231370063BE6F /* VFGCDDemon.m in Sources */,
 				578AFE5D1A6DFB040063BE6F /* VFUITabBarControllerDemon.m in Sources */,
 				578AFE6D1A6F8D5C0063BE6F /* VFPathUtility.m in Sources */,
 				578AFE671A6F6E070063BE6F /* VFSQLiteDemon.m in Sources */,
