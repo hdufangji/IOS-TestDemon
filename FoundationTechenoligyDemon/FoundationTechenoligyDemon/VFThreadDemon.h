@@ -10,4 +10,6 @@
 
 @interface VFThreadDemon : UIViewController
 
+//@property (nonatomic) IBOutlet UIImageView *iv;
+
 @end
