@@ -11,6 +11,7 @@
 		32CBE3B51A6E972200E728D1 /* VFplistDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3B41A6E972200E728D1 /* VFplistDemon.m */; };
 		32CBE3B71A6E975300E728D1 /* MyPList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32CBE3B61A6E975300E728D1 /* MyPList.plist */; };
 		32CBE3BA1A71218E00E728D1 /* VFThreadDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3B91A71218E00E728D1 /* VFThreadDemon.m */; };
+		571E5E9C1A75CED6005A686D /* VFDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 571E5E9B1A75CED6005A686D /* VFDataType.m */; };
 		5756E4421A690E5A00741D26 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E4391A690E5A00741D26 /* about.png */; };
 		5756E4431A690E5A00741D26 /* abouttap.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E43A1A690E5A00741D26 /* abouttap.png */; };
 		5756E4441A690E5A00741D26 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E43B1A690E5A00741D26 /* arrow.png */; };
@@ -71,6 +72,8 @@
 		32CBE3B61A6E975300E728D1 /* MyPList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MyPList.plist; sourceTree = "<group>"; };
 		32CBE3B81A71218E00E728D1 /* VFThreadDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFThreadDemon.h; sourceTree = "<group>"; };
 		32CBE3B91A71218E00E728D1 /* VFThreadDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFThreadDemon.m; sourceTree = "<group>"; };
+		571E5E9A1A75CED6005A686D /* VFDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFDataType.h; sourceTree = "<group>"; };
+		571E5E9B1A75CED6005A686D /* VFDataType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFDataType.m; sourceTree = "<group>"; };
 		5756E4391A690E5A00741D26 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		5756E43A1A690E5A00741D26 /* abouttap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abouttap.png; sourceTree = "<group>"; };
 		5756E43B1A690E5A00741D26 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
@@ -172,6 +175,15 @@
 			name = DataStorageDemon;
 			sourceTree = "<group>";
 		};
+		571E5E991A75CEBC005A686D /* DataTypeDemon */ = {
+			isa = PBXGroup;
+			children = (
+				571E5E9A1A75CED6005A686D /* VFDataType.h */,
+				571E5E9B1A75CED6005A686D /* VFDataType.m */,
+			);
+			name = DataTypeDemon;
+			sourceTree = "<group>";
+		};
 		5756E4381A690E3300741D26 /* resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +282,7 @@
 		57E538D71A68F15F007B7282 /* FoundationTechenoligyDemon */ = {
 			isa = PBXGroup;
 			children = (
+				571E5E991A75CEBC005A686D /* DataTypeDemon */,
 				578AFE701A709FB30063BE6F /* Thread&Network */,
 				578AFE6A1A6F8D110063BE6F /* Utility */,
 				578AFE5E1A6F32700063BE6F /* NotificationDemon */,
@@ -461,6 +474,7 @@
 				578AFE671A6F6E070063BE6F /* VFSQLiteDemon.m in Sources */,
 				32CBE3B11A6D522500E728D1 /* VFUIPickerView.m in Sources */,
 				578AFE4D1A6C9C390063BE6F /* VFLabelTextfieldDemon.m in Sources */,
+				571E5E9C1A75CED6005A686D /* VFDataType.m in Sources */,
 				57E5390C1A68F8E5007B7282 /* VFButtonDemonViewController.m in Sources */,
 				578AFE501A6CCB4B0063BE6F /* VFAlertViewDemon.m in Sources */,
 			);
