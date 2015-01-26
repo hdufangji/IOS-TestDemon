@@ -32,7 +32,10 @@
 - (void)getImage
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://a.hiphotos.baidu.com/image/pic/item/e4dde71190ef76c687a0a6509e16fdfaaf51675e.jpg"]];
+        NSError *errorMsg = nil;
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://image.tianjimedia.com/uploadImages/2014/100/30/1UY90W5R7I81_680x500.jpg"]];
+        NSData *data = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:&errorMsg];
+//        NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://a.hiphotos.baidu.com/image/pic/item/e4dde71190ef76c687a0a6509e16fdfaaf51675e.jpg"]];
         
         UIImage *image = [[UIImage alloc] initWithData:data];
         
