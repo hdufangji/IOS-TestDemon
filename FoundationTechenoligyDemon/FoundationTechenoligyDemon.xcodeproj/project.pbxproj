@@ -12,6 +12,7 @@
 		32CBE3B71A6E975300E728D1 /* MyPList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32CBE3B61A6E975300E728D1 /* MyPList.plist */; };
 		32CBE3BA1A71218E00E728D1 /* VFThreadDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3B91A71218E00E728D1 /* VFThreadDemon.m */; };
 		32CBE3CF1A766EB500E728D1 /* VFBlockDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3CD1A766EB500E728D1 /* VFBlockDemon.m */; };
+		32CBE3E11A76739300E728D1 /* VFSingletonDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3E01A76739300E728D1 /* VFSingletonDemon.m */; };
 		5756E4421A690E5A00741D26 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E4391A690E5A00741D26 /* about.png */; };
 		5756E4431A690E5A00741D26 /* abouttap.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E43A1A690E5A00741D26 /* abouttap.png */; };
 		5756E4441A690E5A00741D26 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E43B1A690E5A00741D26 /* arrow.png */; };
@@ -74,6 +75,8 @@
 		32CBE3B91A71218E00E728D1 /* VFThreadDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFThreadDemon.m; sourceTree = "<group>"; };
 		32CBE3CC1A766EB500E728D1 /* VFBlockDemon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VFBlockDemon.h; sourceTree = "<group>"; };
 		32CBE3CD1A766EB500E728D1 /* VFBlockDemon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFBlockDemon.m; sourceTree = "<group>"; };
+		32CBE3DF1A76739300E728D1 /* VFSingletonDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFSingletonDemon.h; sourceTree = "<group>"; };
+		32CBE3E01A76739300E728D1 /* VFSingletonDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFSingletonDemon.m; sourceTree = "<group>"; };
 		5756E4391A690E5A00741D26 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		5756E43A1A690E5A00741D26 /* abouttap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abouttap.png; sourceTree = "<group>"; };
 		5756E43B1A690E5A00741D26 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
@@ -184,6 +187,15 @@
 			name = BlockDemon;
 			sourceTree = "<group>";
 		};
+		32CBE3DE1A76736000E728D1 /* SingletonDemon */ = {
+			isa = PBXGroup;
+			children = (
+				32CBE3DF1A76739300E728D1 /* VFSingletonDemon.h */,
+				32CBE3E01A76739300E728D1 /* VFSingletonDemon.m */,
+			);
+			name = SingletonDemon;
+			sourceTree = "<group>";
+		};
 		5756E4381A690E3300741D26 /* resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +294,7 @@
 		57E538D71A68F15F007B7282 /* FoundationTechenoligyDemon */ = {
 			isa = PBXGroup;
 			children = (
+				32CBE3DE1A76736000E728D1 /* SingletonDemon */,
 				32CBE3D01A766EBB00E728D1 /* BlockDemon */,
 				578AFE701A709FB30063BE6F /* Thread&Network */,
 				578AFE6A1A6F8D110063BE6F /* Utility */,
@@ -457,6 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32CBE3CF1A766EB500E728D1 /* VFBlockDemon.m in Sources */,
+				32CBE3E11A76739300E728D1 /* VFSingletonDemon.m in Sources */,
 				57E538E21A68F15F007B7282 /* VFAppDelegate.m in Sources */,
 				57E539081A68F1E8007B7282 /* VFStringObject.m in Sources */,
 				57E538E81A68F15F007B7282 /* VFViewController.m in Sources */,
