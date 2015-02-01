@@ -10,4 +10,6 @@
 
 @interface VFNetworkUtility : NSObject
 
++ (NSData *)downloadImageDatafrom: (NSURL *)url;
+
 @end
