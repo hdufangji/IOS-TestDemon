@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		324567971AC05B07004152F1 /* VFArrayDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 324567961AC05B07004152F1 /* VFArrayDemon.m */; };
 		329EDEB51A7E1A280009EB14 /* VFStringUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 329EDEB41A7E1A280009EB14 /* VFStringUtility.m */; };
 		32CBE3B11A6D522500E728D1 /* VFUIPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3B01A6D522500E728D1 /* VFUIPickerView.m */; };
 		32CBE3B51A6E972200E728D1 /* VFplistDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3B41A6E972200E728D1 /* VFplistDemon.m */; };
@@ -68,6 +69,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		324567951AC05B07004152F1 /* VFArrayDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFArrayDemon.h; sourceTree = "<group>"; };
+		324567961AC05B07004152F1 /* VFArrayDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFArrayDemon.m; sourceTree = "<group>"; };
 		329EDEB31A7E1A280009EB14 /* VFStringUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFStringUtility.h; sourceTree = "<group>"; };
 		329EDEB41A7E1A280009EB14 /* VFStringUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFStringUtility.m; sourceTree = "<group>"; };
 		32CBE3AF1A6D522500E728D1 /* VFUIPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFUIPickerView.h; sourceTree = "<group>"; };
@@ -172,6 +175,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		324567911AC05216004152F1 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				324567951AC05B07004152F1 /* VFArrayDemon.h */,
+				324567961AC05B07004152F1 /* VFArrayDemon.m */,
+			);
+			name = NSArray;
+			sourceTree = "<group>";
+		};
 		32CBE3B21A6E96EB00E728D1 /* DataStorageDemon */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +320,7 @@
 		57E538D71A68F15F007B7282 /* FoundationTechenoligyDemon */ = {
 			isa = PBXGroup;
 			children = (
+				324567911AC05216004152F1 /* NSArray */,
 				32CBE3DE1A76736000E728D1 /* SingletonDemon */,
 				32CBE3D01A766EBB00E728D1 /* BlockDemon */,
 				578AFE701A709FB30063BE6F /* Thread&Network */,
@@ -543,6 +556,7 @@
 				578AFE761A7231370063BE6F /* VFGCDDemon.m in Sources */,
 				578AFE5D1A6DFB040063BE6F /* VFUITabBarControllerDemon.m in Sources */,
 				578AFE6D1A6F8D5C0063BE6F /* VFPathUtility.m in Sources */,
+				324567971AC05B07004152F1 /* VFArrayDemon.m in Sources */,
 				578AFE671A6F6E070063BE6F /* VFSQLiteDemon.m in Sources */,
 				32CBE3B11A6D522500E728D1 /* VFUIPickerView.m in Sources */,
 				578AFE4D1A6C9C390063BE6F /* VFLabelTextfieldDemon.m in Sources */,
