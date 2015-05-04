@@ -40,6 +40,8 @@
 		578AFE6F1A6F98E20063BE6F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 578AFE6E1A6F98E20063BE6F /* libsqlite3.dylib */; };
 		578AFE731A7213630063BE6F /* VFOperationDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE721A7213630063BE6F /* VFOperationDemon.m */; };
 		578AFE761A7231370063BE6F /* VFGCDDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE751A7231370063BE6F /* VFGCDDemon.m */; };
+		57C64B3A1AF0A4870088F852 /* VFMyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C64B381AF0A4870088F852 /* VFMyTableViewCell.m */; };
+		57C64B3B1AF0A4870088F852 /* VFMyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57C64B391AF0A4870088F852 /* VFMyTableViewCell.xib */; };
 		57E538D21A68F15F007B7282 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D11A68F15F007B7282 /* Foundation.framework */; };
 		57E538D41A68F15F007B7282 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D31A68F15F007B7282 /* CoreGraphics.framework */; };
 		57E538D61A68F15F007B7282 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D51A68F15F007B7282 /* UIKit.framework */; };
@@ -123,6 +125,9 @@
 		578AFE721A7213630063BE6F /* VFOperationDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFOperationDemon.m; sourceTree = "<group>"; };
 		578AFE741A7231370063BE6F /* VFGCDDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFGCDDemon.h; sourceTree = "<group>"; };
 		578AFE751A7231370063BE6F /* VFGCDDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFGCDDemon.m; sourceTree = "<group>"; };
+		57C64B371AF0A4870088F852 /* VFMyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFMyTableViewCell.h; sourceTree = "<group>"; };
+		57C64B381AF0A4870088F852 /* VFMyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFMyTableViewCell.m; sourceTree = "<group>"; };
+		57C64B391AF0A4870088F852 /* VFMyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VFMyTableViewCell.xib; sourceTree = "<group>"; };
 		57E538CE1A68F15F007B7282 /* FoundationTechenoligyDemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundationTechenoligyDemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E538D11A68F15F007B7282 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		57E538D31A68F15F007B7282 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -381,6 +386,9 @@
 				578AFE4C1A6C9C390063BE6F /* VFLabelTextfieldDemon.m */,
 				578AFE4E1A6CCB4B0063BE6F /* VFAlertViewDemon.h */,
 				578AFE4F1A6CCB4B0063BE6F /* VFAlertViewDemon.m */,
+				57C64B371AF0A4870088F852 /* VFMyTableViewCell.h */,
+				57C64B381AF0A4870088F852 /* VFMyTableViewCell.m */,
+				57C64B391AF0A4870088F852 /* VFMyTableViewCell.xib */,
 			);
 			name = UIKitDemon;
 			sourceTree = "<group>";
@@ -482,6 +490,7 @@
 				57E538DC1A68F15F007B7282 /* InfoPlist.strings in Resources */,
 				5756E44A1A690E5A00741D26 /* contacts.png in Resources */,
 				57E538E51A68F15F007B7282 /* Main.storyboard in Resources */,
+				57C64B3B1AF0A4870088F852 /* VFMyTableViewCell.xib in Resources */,
 				5756E4431A690E5A00741D26 /* abouttap.png in Resources */,
 				5756E4421A690E5A00741D26 /* about.png in Resources */,
 				5756E4451A690E5A00741D26 /* bg_apppattern.png in Resources */,
@@ -539,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32CBE3CF1A766EB500E728D1 /* VFBlockDemon.m in Sources */,
+				57C64B3A1AF0A4870088F852 /* VFMyTableViewCell.m in Sources */,
 				32CBE3E11A76739300E728D1 /* VFSingletonDemon.m in Sources */,
 				329EDEB51A7E1A280009EB14 /* VFStringUtility.m in Sources */,
 				57E538E21A68F15F007B7282 /* VFAppDelegate.m in Sources */,

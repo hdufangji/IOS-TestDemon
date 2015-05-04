@@ -11,6 +11,7 @@
 @interface VFArrayDemon ()
 {
     UIButton *bt;
+    IBOutlet UITextView *tv;
 }
 
 @end
@@ -36,13 +37,18 @@
 
 -(void)saveData2Plist
 {
-    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+//    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+//    
+//    [dic setObject:@"victor" forKey:@"name"];
+//    [dic setValue:@"28" forKey:@"age"];
+//    [dic setValue:@"male" forKey:@"genge"];
+//    
+//    
+//    
+//    [dic writeToFile:@"~/Library/My.plist" atomically:YES];
+
     
-    [dic setObject:@"victor" forKey:@"name"];
-    [dic setValue:@"28" forKey:@"age"];
-    [dic setValue:@"male" forKey:@"genge"];
-    
-    [dic writeToFile:@"~/Library/My.plist" atomically:YES];
+    self->tv.text = [[UIDevice currentDevice] name];
 }
 
 - (void)didReceiveMemoryWarning {
