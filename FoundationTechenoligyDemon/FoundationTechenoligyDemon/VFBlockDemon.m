@@ -24,10 +24,10 @@
     NSLog(@"%d", getSum(10, 20));
     
     NSString* (^appendString)(NSString *, NSString *) = ^(NSString* c, NSString* d){
-        return [NSString stringWithFormat:@"%s, %s", c, d];
+        return [NSString stringWithFormat:@"%@, %@", c, d];
     };
     
-    NSLog(@"%s", appendString(@"abc", @"def"));
+    NSLog(@"%@", appendString(@"abc", @"def"));
 }
 
 @end
