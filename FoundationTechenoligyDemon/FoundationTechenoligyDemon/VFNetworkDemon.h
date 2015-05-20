@@ -1,13 +1,13 @@
 //
-//  VFGCDDemon.h
+//  VFNetworkDemon.h
 //  FoundationTechenoligyDemon
 //
-//  Created by victor on 1/23/15.
+//  Created by victor on 20/5/15.
 //  Copyright (c) 2015 nero. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface VFGCDDemon : UIViewController
+@interface VFNetworkDemon : UIViewController
 
 @end
