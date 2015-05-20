@@ -1,14 +1,16 @@
 //
-//  VFArrayDemon.m
+//  VFCollectionDemon.m
 //  FoundationTechenoligyDemon
 //
-//  Created by vic on 3/23/15.
+//  Created by victor on 20/5/15.
 //  Copyright (c) 2015 nero. All rights reserved.
 //
 
-#import "VFArrayDemon.h"
+#import "VFCollectionDemon.h"
 
-@interface VFArrayDemon ()
+extern NSString *version1;
+
+@interface VFCollectionDemon ()
 {
     UIButton *bt;
     IBOutlet UITextView *tv;
@@ -16,7 +18,7 @@
 
 @end
 
-@implementation VFArrayDemon
+@implementation VFCollectionDemon
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,33 +30,42 @@
     [bt addTarget:self action:@selector(onBtClick:) forControlEvents:UIControlEventTouchUpInside];
     
     tv = [[UITextView alloc] initWithFrame:CGRectMake(40, 80, 120, 120)];
-//    tv.textColor = [UIColor yellowColor];
+    //    tv.textColor = [UIColor yellowColor];
+    
+    NSLog(version1);
     
     [self.view addSubview:bt];
     [self.view addSubview:tv];
 }
 
+/**
+ *  @method initDictionary
+ *  @class VFAppDelegate
+ *
+ *  @param sender <#sender description#>
+ */
 -(void)onBtClick: (id)sender
 {
-//    [self saveData2Plist];
-//    [self initDictionary];
+        [self saveData2Plist];
+    //    [self initDictionary];
     [self initMutableDictionary];
-//    [self initArray];
+    //    [self initArray];
 }
 
+//TODO: add more code to test
 -(void)saveData2Plist
 {
-//    NSMutableDictionary *dic = [NSMutableDictionary alloc] initwit
-//    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
-//    
-//    [dic setObject:@"victor" forKey:@"name"];
-//    [dic setValue:@"28" forKey:@"age"];
-//    [dic setValue:@"male" forKey:@"genge"];
-//    
-//    
-//    
-//    [dic writeToFile:@"~/Library/My.plist" atomically:YES];
-
+    //    NSMutableDictionary *dic = [NSMutableDictionary alloc] initwit
+    //    NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
+    //
+    //    [dic setObject:@"victor" forKey:@"name"];
+    //    [dic setValue:@"28" forKey:@"age"];
+    //    [dic setValue:@"male" forKey:@"genge"];
+    //
+    //
+    //
+    //    [dic writeToFile:@"~/Library/My.plist" atomically:YES];
+    
     
     self->tv.text = [[UIDevice currentDevice] name];
 }
@@ -65,16 +76,16 @@
     NSDictionary *dic;
     
     //1
-//    dic = [NSDictionary dictionaryWithContentsOfFile:@""];
+    //    dic = [NSDictionary dictionaryWithContentsOfFile:@""];
     
     //2
-//    dic = [NSDictionary dictionaryWithObject:@"victor1" forKey:@"name"];
+    //    dic = [NSDictionary dictionaryWithObject:@"victor1" forKey:@"name"];
     
     //3
     dic = [NSDictionary dictionaryWithObjects:[[NSArray alloc] initWithObjects:@"victor2", @"28", @"male", nil] forKeys:[[NSArray alloc] initWithObjects:@"name", @"age", @"gender", nil]];
     
     //4
-//    dic = [NSDictionary dictionaryWithObjectsAndKeys:@"victor3", @"name", @"28", @"age", nil];
+    //    dic = [NSDictionary dictionaryWithObjectsAndKeys:@"victor3", @"name", @"28", @"age", nil];
     
     for (NSString *key in [dic keyEnumerator]) {
         NSLog(@"%@", key);
@@ -126,5 +137,6 @@
     
     self->tv.text = [array description];
 }
+
 
 @end

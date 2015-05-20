@@ -8,6 +8,14 @@
 
 #import "VFAppDelegate.h"
 
+
+
+/**
+ *  @description test extern variable.
+ *  this variable is invoked in @class VFCollectionDemon @method viewDidLoad
+ */
+extern NSString *version1 = @"aa";
+
 @implementation VFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

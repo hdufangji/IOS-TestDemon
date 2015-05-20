@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		324567971AC05B07004152F1 /* VFArrayDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 324567961AC05B07004152F1 /* VFArrayDemon.m */; };
 		329EDEB51A7E1A280009EB14 /* VFStringUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 329EDEB41A7E1A280009EB14 /* VFStringUtility.m */; };
 		32CBE3B11A6D522500E728D1 /* VFUIPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3B01A6D522500E728D1 /* VFUIPickerView.m */; };
 		32CBE3B51A6E972200E728D1 /* VFplistDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CBE3B41A6E972200E728D1 /* VFplistDemon.m */; };
@@ -40,6 +39,7 @@
 		578AFE6F1A6F98E20063BE6F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 578AFE6E1A6F98E20063BE6F /* libsqlite3.dylib */; };
 		578AFE731A7213630063BE6F /* VFOperationDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE721A7213630063BE6F /* VFOperationDemon.m */; };
 		578AFE761A7231370063BE6F /* VFGCDDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE751A7231370063BE6F /* VFGCDDemon.m */; };
+		578AFFF71B0C1DA90001E908 /* VFCollectionDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFFF61B0C1DA90001E908 /* VFCollectionDemon.m */; };
 		57C64B3A1AF0A4870088F852 /* VFMyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C64B381AF0A4870088F852 /* VFMyTableViewCell.m */; };
 		57C64B3B1AF0A4870088F852 /* VFMyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57C64B391AF0A4870088F852 /* VFMyTableViewCell.xib */; };
 		57E538D21A68F15F007B7282 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E538D11A68F15F007B7282 /* Foundation.framework */; };
@@ -71,8 +71,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		324567951AC05B07004152F1 /* VFArrayDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFArrayDemon.h; sourceTree = "<group>"; };
-		324567961AC05B07004152F1 /* VFArrayDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFArrayDemon.m; sourceTree = "<group>"; };
 		329EDEB31A7E1A280009EB14 /* VFStringUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFStringUtility.h; sourceTree = "<group>"; };
 		329EDEB41A7E1A280009EB14 /* VFStringUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFStringUtility.m; sourceTree = "<group>"; };
 		32CBE3AF1A6D522500E728D1 /* VFUIPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFUIPickerView.h; sourceTree = "<group>"; };
@@ -125,6 +123,8 @@
 		578AFE721A7213630063BE6F /* VFOperationDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFOperationDemon.m; sourceTree = "<group>"; };
 		578AFE741A7231370063BE6F /* VFGCDDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFGCDDemon.h; sourceTree = "<group>"; };
 		578AFE751A7231370063BE6F /* VFGCDDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFGCDDemon.m; sourceTree = "<group>"; };
+		578AFFF51B0C1DA90001E908 /* VFCollectionDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFCollectionDemon.h; sourceTree = "<group>"; };
+		578AFFF61B0C1DA90001E908 /* VFCollectionDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFCollectionDemon.m; sourceTree = "<group>"; };
 		57C64B371AF0A4870088F852 /* VFMyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFMyTableViewCell.h; sourceTree = "<group>"; };
 		57C64B381AF0A4870088F852 /* VFMyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFMyTableViewCell.m; sourceTree = "<group>"; };
 		57C64B391AF0A4870088F852 /* VFMyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VFMyTableViewCell.xib; sourceTree = "<group>"; };
@@ -180,15 +180,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		324567911AC05216004152F1 /* NSArray */ = {
-			isa = PBXGroup;
-			children = (
-				324567951AC05B07004152F1 /* VFArrayDemon.h */,
-				324567961AC05B07004152F1 /* VFArrayDemon.m */,
-			);
-			name = NSArray;
-			sourceTree = "<group>";
-		};
 		32CBE3B21A6E96EB00E728D1 /* DataStorageDemon */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +279,15 @@
 			name = "Thread&Network";
 			sourceTree = "<group>";
 		};
+		578AFFF41B0C1D830001E908 /* NSCollection */ = {
+			isa = PBXGroup;
+			children = (
+				578AFFF51B0C1DA90001E908 /* VFCollectionDemon.h */,
+				578AFFF61B0C1DA90001E908 /* VFCollectionDemon.m */,
+			);
+			name = NSCollection;
+			sourceTree = "<group>";
+		};
 		57E538C51A68F15F007B7282 = {
 			isa = PBXGroup;
 			children = (
@@ -325,7 +325,7 @@
 		57E538D71A68F15F007B7282 /* FoundationTechenoligyDemon */ = {
 			isa = PBXGroup;
 			children = (
-				324567911AC05216004152F1 /* NSArray */,
+				578AFFF41B0C1D830001E908 /* NSCollection */,
 				32CBE3DE1A76736000E728D1 /* SingletonDemon */,
 				32CBE3D01A766EBB00E728D1 /* BlockDemon */,
 				578AFE701A709FB30063BE6F /* Thread&Network */,
@@ -566,12 +566,12 @@
 				578AFE761A7231370063BE6F /* VFGCDDemon.m in Sources */,
 				578AFE5D1A6DFB040063BE6F /* VFUITabBarControllerDemon.m in Sources */,
 				578AFE6D1A6F8D5C0063BE6F /* VFPathUtility.m in Sources */,
-				324567971AC05B07004152F1 /* VFArrayDemon.m in Sources */,
 				578AFE671A6F6E070063BE6F /* VFSQLiteDemon.m in Sources */,
 				32CBE3B11A6D522500E728D1 /* VFUIPickerView.m in Sources */,
 				578AFE4D1A6C9C390063BE6F /* VFLabelTextfieldDemon.m in Sources */,
 				57E5390C1A68F8E5007B7282 /* VFButtonDemonViewController.m in Sources */,
 				578AFE501A6CCB4B0063BE6F /* VFAlertViewDemon.m in Sources */,
+				578AFFF71B0C1DA90001E908 /* VFCollectionDemon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
