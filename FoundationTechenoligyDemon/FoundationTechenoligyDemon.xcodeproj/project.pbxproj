@@ -36,7 +36,6 @@
 		578AFE691A6F6F540063BE6F /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 578AFE681A6F6F540063BE6F /* libsqlite3.0.dylib */; };
 		578AFE6D1A6F8D5C0063BE6F /* VFPathUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE6C1A6F8D5C0063BE6F /* VFPathUtility.m */; };
 		578AFE6F1A6F98E20063BE6F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 578AFE6E1A6F98E20063BE6F /* libsqlite3.dylib */; };
-		578AFE731A7213630063BE6F /* VFOperationDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE721A7213630063BE6F /* VFOperationDemon.m */; };
 		578AFFF71B0C1DA90001E908 /* VFCollectionDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFFF61B0C1DA90001E908 /* VFCollectionDemon.m */; };
 		57C64B3A1AF0A4870088F852 /* VFMyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C64B381AF0A4870088F852 /* VFMyTableViewCell.m */; };
 		57C64B3B1AF0A4870088F852 /* VFMyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57C64B391AF0A4870088F852 /* VFMyTableViewCell.xib */; };
@@ -116,8 +115,6 @@
 		578AFE6B1A6F8D5C0063BE6F /* VFPathUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFPathUtility.h; sourceTree = "<group>"; };
 		578AFE6C1A6F8D5C0063BE6F /* VFPathUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFPathUtility.m; sourceTree = "<group>"; };
 		578AFE6E1A6F98E20063BE6F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		578AFE711A7213630063BE6F /* VFOperationDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFOperationDemon.h; sourceTree = "<group>"; };
-		578AFE721A7213630063BE6F /* VFOperationDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFOperationDemon.m; sourceTree = "<group>"; };
 		578AFFF51B0C1DA90001E908 /* VFCollectionDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFCollectionDemon.h; sourceTree = "<group>"; };
 		578AFFF61B0C1DA90001E908 /* VFCollectionDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFCollectionDemon.m; sourceTree = "<group>"; };
 		57C64B371AF0A4870088F852 /* VFMyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFMyTableViewCell.h; sourceTree = "<group>"; };
@@ -266,8 +263,6 @@
 			children = (
 				32EB6FBA1A7BCF4C0028E442 /* VFNetworkUtility.h */,
 				32EB6FBB1A7BCF4C0028E442 /* VFNetworkUtility.m */,
-				578AFE711A7213630063BE6F /* VFOperationDemon.h */,
-				578AFE721A7213630063BE6F /* VFOperationDemon.m */,
 				57EDEF081B0C515300A60FA6 /* VFNetworkDemon.h */,
 				57EDEF091B0C515300A60FA6 /* VFNetworkDemon.m */,
 			);
@@ -550,7 +545,6 @@
 				57E539081A68F1E8007B7282 /* VFStringObject.m in Sources */,
 				57E538DE1A68F15F007B7282 /* main.m in Sources */,
 				32EB6FBC1A7BCF4C0028E442 /* VFNetworkUtility.m in Sources */,
-				578AFE731A7213630063BE6F /* VFOperationDemon.m in Sources */,
 				578AFE641A6F486D0063BE6F /* VFPreferenceDemon.m in Sources */,
 				578AFE611A6F32A50063BE6F /* VFDeviceNotificationDemon.m in Sources */,
 				578AFE541A6CD0800063BE6F /* VFUITableViewDemon.m in Sources */,

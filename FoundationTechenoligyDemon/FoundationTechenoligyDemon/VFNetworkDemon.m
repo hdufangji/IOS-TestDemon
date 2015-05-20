@@ -10,6 +10,9 @@
 #import "MBProgressHUD.h"
 #import "VFNetworkUtility.h"
 
+#define URL1 @"http://image.tianjimedia.com/uploadImages/2014/100/30/1UY90W5R7I81_680x500.jpg"
+#define URL2 @"http://a.hiphotos.baidu.com/image/pic/item/e4dde71190ef76c687a0a6509e16fdfaaf51675e.jpg"
+
 @interface VFNetworkDemon ()
 {
     UIImageView *iv;
@@ -25,7 +28,7 @@
     
     iv = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
     bt = [[UIButton alloc] initWithFrame:CGRectMake(40, 40, 120, 40)];
-    bt.titleLabel.text = @"hit me!";
+    [bt setTitle:@"hit me!" forState:UIControlStateNormal];
     bt.backgroundColor = [UIColor redColor];
     [bt addTarget:self action:@selector(onBtClicked:) forControlEvents:UIControlEventTouchUpInside];
     
@@ -33,10 +36,24 @@
     [self.view addSubview:bt];
 }
 
-#pragma mark - Use Thread
-- (void)getImage
+- (void)onBtClicked: (id)sender
 {
-    NSURL *url = [NSURL URLWithString:@"http://a.hiphotos.baidu.com/image/pic/item/e4dde71190ef76c687a0a6509e16fdfaaf51675e.jpg"];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
+    //Thread
+//    [self getImageWithThread];
+    
+    //GCD
+    [self getImageWithGCD1];
+    
+    //Operation
+//    [self getImageWithOperation];
+}
+
+#pragma mark - Use Thread
+- (void)getImageWithThread
+{
+    NSURL *url = [NSURL URLWithString:URL2];
     NSThread *downloadThread = [[NSThread alloc] initWithTarget:self selector:@selector(downloadImage:) object:url];
     [downloadThread start];
 }
@@ -68,33 +85,27 @@
 
 
 #pragma mark - Use GCD
-- (void)onBtClicked: (id)sender
-{
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [self getImage1];
-}
-
 - (void)getImageWithGCD
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [self downloadImageByUrl:@"http://image.tianjimedia.com/uploadImages/2014/100/30/1UY90W5R7I81_680x500.jpg"];
+        [self downloadImageByUrl:URL1];
     });
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        [self downloadImageByUrl:@"http://a.hiphotos.baidu.com/image/pic/item/e4dde71190ef76c687a0a6509e16fdfaaf51675e.jpg"];
+        [self downloadImageByUrl:URL2];
     });
 }
 
-- (void)getImage1
+- (void)getImageWithGCD1
 {
     dispatch_queue_t downloadQueue = dispatch_queue_create("myDownloadQueue", DISPATCH_QUEUE_SERIAL);
     
     dispatch_async(downloadQueue, ^(void){
-        [self downloadImageByUrl:@"http://image.tianjimedia.com/uploadImages/2014/100/30/1UY90W5R7I81_680x500.jpg"];
+        [self downloadImageByUrl:URL1];
     });
     
     dispatch_async(downloadQueue, ^(void){
-        [self downloadImageByUrl:@"http://a.hiphotos.baidu.com/image/pic/item/e4dde71190ef76c687a0a6509e16fdfaaf51675e.jpg"];
+        [self downloadImageByUrl:URL2];
     });
 }
 
@@ -114,5 +125,29 @@
         NSLog(@"下载失败!");
     }
 }
+
+#pragma mark - Use Operation
+- (void)getImageWithOperation
+{
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    
+    NSURL *url = [NSURL URLWithString:@"http://a.hiphotos.baidu.com/image/pic/item/e4dde71190ef76c687a0a6509e16fdfaaf51675e.jpg"];
+    NSInvocationOperation *invocationOper = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(downloadImage1:) object:url];
+    
+    [queue addOperation:invocationOper];
+}
+
+- (void)downloadImage1: (NSURL *)url
+{
+    NSData *data = [[NSData alloc] initWithContentsOfURL:url];
+    
+    [self performSelectorOnMainThread:@selector(setImage1:) withObject:data waitUntilDone:YES];
+}
+
+- (void)setImage1: (NSData *)data
+{
+    iv.image = [[UIImage alloc] initWithData:data];
+}
+
 
 @end

@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--Collection Demon-->
+        <!--Network Demon-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="VFCollectionDemon" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="VFNetworkDemon" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fdM-9z-6gV"/>
                         <viewControllerLayoutGuide type="bottom" id="ZJI-Qq-ZSy"/>
