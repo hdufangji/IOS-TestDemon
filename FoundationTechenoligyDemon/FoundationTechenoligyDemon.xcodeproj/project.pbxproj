@@ -55,6 +55,8 @@
 		57E539081A68F1E8007B7282 /* VFStringObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E539071A68F1E8007B7282 /* VFStringObject.m */; };
 		57E5390C1A68F8E5007B7282 /* VFButtonDemonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57E5390B1A68F8E5007B7282 /* VFButtonDemonViewController.m */; };
 		57EDEF0A1B0C515300A60FA6 /* VFNetworkDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EDEF091B0C515300A60FA6 /* VFNetworkDemon.m */; };
+		57EDEF101B0D829A00A60FA6 /* VFMediaDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EDEF0F1B0D829A00A60FA6 /* VFMediaDemon.m */; };
+		57EDEF121B0D863500A60FA6 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EDEF111B0D863500A60FA6 /* AssetsLibrary.framework */; };
 		B2D809B3F1BCFCA0498C80C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2B0E0397CBBBDA8AB550615 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -143,6 +145,9 @@
 		57E5390B1A68F8E5007B7282 /* VFButtonDemonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFButtonDemonViewController.m; sourceTree = "<group>"; };
 		57EDEF081B0C515300A60FA6 /* VFNetworkDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFNetworkDemon.h; sourceTree = "<group>"; };
 		57EDEF091B0C515300A60FA6 /* VFNetworkDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFNetworkDemon.m; sourceTree = "<group>"; };
+		57EDEF0E1B0D829A00A60FA6 /* VFMediaDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFMediaDemon.h; sourceTree = "<group>"; };
+		57EDEF0F1B0D829A00A60FA6 /* VFMediaDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFMediaDemon.m; sourceTree = "<group>"; };
+		57EDEF111B0D863500A60FA6 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		B2B0E0397CBBBDA8AB550615 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB160E9BD0CC229F89E55EB /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57EDEF121B0D863500A60FA6 /* AssetsLibrary.framework in Frameworks */,
 				578AFE6F1A6F98E20063BE6F /* libsqlite3.dylib in Frameworks */,
 				578AFE691A6F6F540063BE6F /* libsqlite3.0.dylib in Frameworks */,
 				57E538D41A68F15F007B7282 /* CoreGraphics.framework in Frameworks */,
@@ -301,6 +307,7 @@
 		57E538D01A68F15F007B7282 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				57EDEF111B0D863500A60FA6 /* AssetsLibrary.framework */,
 				578AFE6E1A6F98E20063BE6F /* libsqlite3.dylib */,
 				578AFE681A6F6F540063BE6F /* libsqlite3.0.dylib */,
 				57E538D11A68F15F007B7282 /* Foundation.framework */,
@@ -315,6 +322,7 @@
 		57E538D71A68F15F007B7282 /* FoundationTechenoligyDemon */ = {
 			isa = PBXGroup;
 			children = (
+				57EDEF0D1B0D820E00A60FA6 /* Media */,
 				578AFFF41B0C1D830001E908 /* NSCollection */,
 				32CBE3DE1A76736000E728D1 /* SingletonDemon */,
 				32CBE3D01A766EBB00E728D1 /* BlockDemon */,
@@ -381,6 +389,15 @@
 				57C64B391AF0A4870088F852 /* VFMyTableViewCell.xib */,
 			);
 			name = UIKitDemon;
+			sourceTree = "<group>";
+		};
+		57EDEF0D1B0D820E00A60FA6 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				57EDEF0E1B0D829A00A60FA6 /* VFMediaDemon.h */,
+				57EDEF0F1B0D829A00A60FA6 /* VFMediaDemon.m */,
+			);
+			name = Media;
 			sourceTree = "<group>";
 		};
 		5B5FB1BF780D96747161C396 /* Pods */ = {
@@ -537,6 +554,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57EDEF101B0D829A00A60FA6 /* VFMediaDemon.m in Sources */,
 				32CBE3CF1A766EB500E728D1 /* VFBlockDemon.m in Sources */,
 				57C64B3A1AF0A4870088F852 /* VFMyTableViewCell.m in Sources */,
 				32CBE3E11A76739300E728D1 /* VFSingletonDemon.m in Sources */,
