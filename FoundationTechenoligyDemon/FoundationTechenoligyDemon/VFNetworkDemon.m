@@ -131,7 +131,7 @@
 {
     NSOperationQueue *queue = [[NSOperationQueue alloc] init];
     
-    NSURL *url = [NSURL URLWithString:@"http://a.hiphotos.baidu.com/image/pic/item/e4dde71190ef76c687a0a6509e16fdfaaf51675e.jpg"];
+    NSURL *url = [NSURL URLWithString:URL2];
     NSInvocationOperation *invocationOper = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(downloadImage1:) object:url];
     
     [queue addOperation:invocationOper];
