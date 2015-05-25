@@ -43,7 +43,7 @@
                                  if (alAsset) {
                                      ALAssetRepresentation *representation = [alAsset defaultRepresentation];
                                      NSURL *url = [representation url];
-                                     AVAsset *avAsset = [AVURLAsset URLAssetWithURL:url options:nil];
+//                                     AVAsset *avAsset = [AVURLAsset URLAssetWithURL:url options:nil];
                                      // Do something interesting with the AV asset.
                                  }
                              }];

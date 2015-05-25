@@ -25,6 +25,7 @@
 		5756E44A1A690E5A00741D26 /* contacts.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E4411A690E5A00741D26 /* contacts.png */; };
 		5756E44D1A6914A500741D26 /* VFScrollViewImageViewDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5756E44C1A6914A500741D26 /* VFScrollViewImageViewDemon.m */; };
 		5756E44F1A691BF000741D26 /* ScreenShot1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5756E44E1A691BF000741D26 /* ScreenShot1.png */; };
+		5789F0AC1B13006C00B4EA33 /* VFFoundationDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 5789F0AB1B13006C00B4EA33 /* VFFoundationDemon.m */; };
 		578AFE4D1A6C9C390063BE6F /* VFLabelTextfieldDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE4C1A6C9C390063BE6F /* VFLabelTextfieldDemon.m */; };
 		578AFE501A6CCB4B0063BE6F /* VFAlertViewDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE4F1A6CCB4B0063BE6F /* VFAlertViewDemon.m */; };
 		578AFE541A6CD0800063BE6F /* VFUITableViewDemon.m in Sources */ = {isa = PBXBuildFile; fileRef = 578AFE531A6CD0800063BE6F /* VFUITableViewDemon.m */; };
@@ -97,6 +98,8 @@
 		5756E44B1A6914A500741D26 /* VFScrollViewImageViewDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFScrollViewImageViewDemon.h; sourceTree = "<group>"; };
 		5756E44C1A6914A500741D26 /* VFScrollViewImageViewDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFScrollViewImageViewDemon.m; sourceTree = "<group>"; };
 		5756E44E1A691BF000741D26 /* ScreenShot1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenShot1.png; sourceTree = "<group>"; };
+		5789F0AA1B13006C00B4EA33 /* VFFoundationDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFFoundationDemon.h; sourceTree = "<group>"; };
+		5789F0AB1B13006C00B4EA33 /* VFFoundationDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFFoundationDemon.m; sourceTree = "<group>"; };
 		578AFE4B1A6C9C390063BE6F /* VFLabelTextfieldDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFLabelTextfieldDemon.h; sourceTree = "<group>"; };
 		578AFE4C1A6C9C390063BE6F /* VFLabelTextfieldDemon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VFLabelTextfieldDemon.m; sourceTree = "<group>"; };
 		578AFE4E1A6CCB4B0063BE6F /* VFAlertViewDemon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VFAlertViewDemon.h; sourceTree = "<group>"; };
@@ -229,6 +232,15 @@
 			name = resource;
 			sourceTree = "<group>";
 		};
+		5789F0A91B12FFD500B4EA33 /* NSFoundationDemon */ = {
+			isa = PBXGroup;
+			children = (
+				5789F0AA1B13006C00B4EA33 /* VFFoundationDemon.h */,
+				5789F0AB1B13006C00B4EA33 /* VFFoundationDemon.m */,
+			);
+			name = NSFoundationDemon;
+			sourceTree = "<group>";
+		};
 		578AFE511A6CCFF60063BE6F /* AdvancedUIKitDemon */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +334,7 @@
 		57E538D71A68F15F007B7282 /* FoundationTechenoligyDemon */ = {
 			isa = PBXGroup;
 			children = (
+				5789F0A91B12FFD500B4EA33 /* NSFoundationDemon */,
 				57EDEF0D1B0D820E00A60FA6 /* Media */,
 				578AFFF41B0C1D830001E908 /* NSCollection */,
 				32CBE3DE1A76736000E728D1 /* SingletonDemon */,
@@ -572,6 +585,7 @@
 				578AFE5D1A6DFB040063BE6F /* VFUITabBarControllerDemon.m in Sources */,
 				578AFE6D1A6F8D5C0063BE6F /* VFPathUtility.m in Sources */,
 				578AFE671A6F6E070063BE6F /* VFSQLiteDemon.m in Sources */,
+				5789F0AC1B13006C00B4EA33 /* VFFoundationDemon.m in Sources */,
 				57EDEF0A1B0C515300A60FA6 /* VFNetworkDemon.m in Sources */,
 				32CBE3B11A6D522500E728D1 /* VFUIPickerView.m in Sources */,
 				578AFE4D1A6C9C390063BE6F /* VFLabelTextfieldDemon.m in Sources */,
