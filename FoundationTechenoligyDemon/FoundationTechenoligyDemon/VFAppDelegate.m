@@ -22,6 +22,22 @@ extern NSString *version1 = @"aa";
 {
     NSLog(@"didFinishLaunchingWithOptions");
     // Override point for customization after application launch.
+    NSString *string1 = @"123456789aaa";
+    NSString *string2 = @"aaa123456789";
+    
+    if ([string1 hasPrefix:@"aaa"]) {
+        NSLog(@"string 1 has prefix aaa");
+    }
+    
+    if ([string2 hasPrefix:@"aaa"]) {
+        NSLog(@"string 2 has prefix aaa");
+    }
+    
+    NSMutableString *string3 = [[NSMutableString alloc] init];
+    [string3 appendString:@"111222333444555666777\",\n"];
+    [string3 replaceCharactersInRange:NSMakeRange([string3 length] - 2, 2) withString:@"\n"];
+    NSLog(@"%@", string3);
+    
     return YES;
 }
 							
